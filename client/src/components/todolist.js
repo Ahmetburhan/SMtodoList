@@ -33,7 +33,7 @@ class TodoList extends Component {
     }
     
     deleteItem=(key)=> {
-        var filteredItems = this.state.items.filter(function (item) {
+        var filteredItems = this.state.items.filter((item)=> {
             return (item.key !== key);
         });
 
