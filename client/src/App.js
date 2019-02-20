@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import TodoList from "./components/toDoList";
-import todoLogo from "./assets/img/todos.png"
+import TodoList from "./components/todolist";
+import todoLogo from "./assets/img/todos.png";
 import './App.css';
 
 class App extends Component {
