@@ -74,6 +74,9 @@ body{
 }
 
 .todoListMain .theList li {
+  text-align: left;
+  width: 80%;
+  margin-left: 10%;
   color: #eaced1;
   background-color: rgba(255, 255, 255, .5);
   padding: 10px;
@@ -129,5 +132,6 @@ ul.theList {
   border: 2px solid #FFF;
   width: 60%;
 }
+
 }
 
