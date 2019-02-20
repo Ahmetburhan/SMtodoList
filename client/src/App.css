@@ -47,7 +47,7 @@ body{
   padding: 10px;
   font-size: calc(12px + 2vmin);
   border: 2px solid #FFF;
-  width: 30%;
+  width: 45%;
 }
 
 .todoListMain .header button {
@@ -98,4 +98,17 @@ ul.theList {
   margin: auto;
 }
 
+
+@media (max-width: 650px) {
+.todoLogo {
+  margin-top: 20px;
+  width: 400px;
+}
+.todoListMain .header input {
+  padding: 10px;
+  font-size: calc(12px + 2vmin);
+  border: 2px solid #FFF;
+  width: 60%;
+}
+}
 
