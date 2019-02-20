@@ -1,8 +1,32 @@
 .App {
   text-align: center;
+  /* chosen by color picker */
+  background: #F5F5F5;
+}
+body{
+    background: #F5F5F5;
+
+}
+.todoLogo{
+  margin-top: 20px;
+
 }
 
+.itemsLeft{
+  margin-top: 10px;
+  margin-left: 30%;
+  float: left;
+  color: #E9CED1
 
+}
+.inputForm::placeholder{
+  color:#F5F5F5;
+  /* opacity: 1; */
+}
+
+.inputForm:{
+  color: #F5F5F5;
+}
 
 .App-header {
   background-color: #282c34;
@@ -27,18 +51,18 @@
 }
 
 .todoListMain .header button {
-  padding: 10px;
-  font-size: 16px;
-  margin: 10px;
+  padding: 15px;
+ font-size: calc(12px + 2vmin);
+ margin: 10px;
   margin-right: 0px;
-  background-color: #0066FF;
+  background-color: #E9CED1;
   color: #FFF;
-  border: 2px solid #0066FF;
+  border: 2px solid #E9CED1;
 }
 
 .todoListMain .header button:hover {
-  background-color: #003399;
-  border: 2px solid #003399;
+  background-color: rgb(126, 92, 96);
+  border: 2px solid rgb(126, 92, 96);
   cursor: pointer;
 }
 
@@ -63,8 +87,10 @@
   cursor: pointer;
 } */
 
+
 .fas.fa-minus-circle:hover {
   color: red;
+  cursor: pointer
 }
 
 ul.theList {
