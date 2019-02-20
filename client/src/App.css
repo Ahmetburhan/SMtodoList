@@ -68,7 +68,8 @@ body{
 
 .todoListMain .theList {
   list-style: none;
-  padding-left: 0;
+  padding-left: 10%;
+  padding-right: 10%;
   /* width: 250px; */
 }
 
@@ -88,13 +89,20 @@ body{
 } */
 
 
-.fas.fa-minus-circle:hover {
+.fas.fa-edit{
+  color: #eaced1;
+  cursor: pointer;
+  margin-left: 50px;
+  float: right;
+}
+.fas.fa-edit:hover {
   color: red;
   cursor: pointer
 }
 .far.fa-circle:before {
   color: #eaced1;
-  cursor: pointer
+  cursor: pointer;
+  float: left;
 }
 
 .far.fa-circle:hover {

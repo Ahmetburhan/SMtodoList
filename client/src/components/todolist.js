@@ -33,13 +33,30 @@ class TodoList extends Component {
     }
     
     deleteItem=(key)=> {
-        var filteredItems = this.state.items.filter((item)=> {
+        let filteredItems = this.state.items.filter((item)=> {
             return (item.key !== key);
         });
+
 
         this.setState({
             items: filteredItems
         });
+        this._inputElement.value = "";
+    }
+
+    editItem = (key) => {
+        var filteredItems = this.state.items.filter((item) => {
+            return (item.key !== key);
+        });
+        let editedItems = this.state.items.filter((item) => {
+            return (item.key === key);
+        });
+        console.log(editedItems[0]);
+        this.setState({
+            items: filteredItems
+        });
+        this._inputElement.value = editedItems[0].text;
+
     }
 
 
@@ -55,7 +72,7 @@ class TodoList extends Component {
                     </form>
                 </div>
                 <TodoItems entries={this.state.items}
-                    delete={this.deleteItem} />
+                    delete={this.deleteItem} edit={this.editItem}/>
                     <div className="itemsLeft">{this.state.items && this.state.items.length}   items left</div>
             </div>
         );
